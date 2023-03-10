@@ -10,13 +10,61 @@
         <form>
             <fieldset>
                 <legend><b>Контактная информация</b></legend>
+                <span>Имя <span style="color: red;">*</span></span> <input type="text" required>
+                <br>
+                <span>Телефон </span> <input type="tel">
+                <br>
+                <span>Email <span style="color: red;">*</span></span> <input type="email" required>
+                <br>
             </fieldset>
             <fieldset>
                 <legend><b>Персональная информация</b></legend>
+                <span>Возраст <span style="color: red;">*</span></span> <input type="number" required>
+                <br>
+                <span>Пол </span> 
+                <select>
+                    <option value="">Женщина</option>
+                    <option value="">Мужчина</option>
+                </select>
+                <br>
+                <p style="display: inline-block;">Перечислите<br>личные<br>качества</p>
+                <textarea cols="30" rows="10"></textarea>
+                <br>
             </fieldset>
             <fieldset>
                 <legend><b>Выберете ваших любимых животных</b></legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Зебра</span> </label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Кошак</span> </label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Анаконда</span> </label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Человек</span> </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Слон</span> </label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Антилопа</span> </label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Голубь</span> </label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="animal"> <span>Краб</span> </label>
+                        </td>
+                    </tr>
+                </table>
             </fieldset>
+            <input type="submit" value="Отправить информацию">
         </form>
     </body>
 </html>
