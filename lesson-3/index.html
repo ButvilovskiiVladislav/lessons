@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Форма</title> 
+        <title>Форма</title>
     </head>
     <body>
         <h1>Форма заявки на работу в зоопарке</h1>
@@ -10,27 +10,67 @@
         <form>
             <fieldset>
                 <legend><b>Контактная информация</b></legend>
-                <span>Имя <span style="color: red;">*</span></span> <input type="text" required>
-                <br>
-                <span>Телефон </span> <input type="tel">
-                <br>
-                <span>Email <span style="color: red;">*</span></span> <input type="email" required>
-                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <span>Имя <span style="color: red;">*</span></span>
+                        </td>
+                        <td>
+                            <input type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Телефон </span>
+                        </td>
+                        <td>
+                            <input type="tel"><!--???-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Email <span style="color: red;">*</span></span>
+                        </td>
+                        <td>
+                            <input type="email" required>
+                        </td>
+                    </tr>
+                </table>
             </fieldset>
+            <br>
             <fieldset>
                 <legend><b>Персональная информация</b></legend>
-                <span>Возраст <span style="color: red;">*</span></span> <input type="number" required>
-                <br>
-                <span>Пол </span> 
-                <select>
-                    <option value="">Женщина</option>
-                    <option value="">Мужчина</option>
-                </select>
-                <br>
-                <p style="display: inline-block;">Перечислите<br>личные<br>качества</p>
-                <textarea cols="30" rows="10"></textarea>
-                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <span>Возраст <span style="color: red;">*</span></span>
+                        </td>
+                        <td>
+                            <input type="number" required><!--???-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Пол </span>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">Женщина</option>
+                                <option value="">Мужчина</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Перечислите<br>личные<br>качества</span>
+                        </td>
+                        <td>
+                            <textarea cols="20" rows="5" style="resize: none;"></textarea>
+                        </td>
+                    </tr>
+                </table>
             </fieldset>
+            <br>
             <fieldset>
                 <legend><b>Выберете ваших любимых животных</b></legend>
                 <table>
@@ -64,6 +104,7 @@
                     </tr>
                 </table>
             </fieldset>
+            <br>
             <input type="submit" value="Отправить информацию">
         </form>
     </body>
