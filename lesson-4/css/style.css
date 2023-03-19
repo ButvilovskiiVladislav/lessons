@@ -19,7 +19,7 @@ body{
   margin-bottom: 50px;
 }
 
-.heading-posts{
+.heading__posts{
   display: inline-block;
   font-size: 42px;
   line-height: 50px;
@@ -46,10 +46,10 @@ body{
   margin-right: 0;
 }
 
-.article-section{
+.article__section{
   display: inline-block;
   background-color: #E6F7FF;
-  margin: 25px 214px 8px 24px;/*как сделать так, чтобы всё свободное пространство справа в блоке занималось внешним отступом, а не ставились грубые 214px?*/
+  margin: 25px 214px 8px 24px;
   padding: 2px 12px 4px;
   font-size: 12px;
   line-height: 16px;
@@ -58,23 +58,26 @@ body{
   color: #2C90C9;
 }
 
-.article-heading{
+.article__heading{
   font-size: 25px;
   margin: 0px 24px 12px;
   line-height: 31px;
   letter-spacing: 0.2px;
 }
 
-.article-text{
+.article__text{
   margin: 0px 24px 14px;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
 }
 
-.article-date{
+.article__date{
   margin: 0px 0px 27px 24px;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.2px;
 }
+
+
+
