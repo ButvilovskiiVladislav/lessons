@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,::before,::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1px;
+}
+
+body {
+  font: 400 14px/1.4 "Arial","Montserrat",sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2753A2;
+}
+
+img {
+  display: block;
+  margin-inline: auto;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.posts {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1220px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.title-wrap {
+  text-align: center;
+}
+
+.title-wrap__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #E31E24;
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.title-wrap__text {
+  max-width: 773px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 20px auto 0;
+}
+
+.list {
+  display: flex;
+  margin-top: 65px;
+}
+
+.list__item {
+  padding: 50px 20px 30px;
+  font-size: 1px;
+  max-width: 390px;
+  box-shadow: 0 0 10px rgba(39, 83, 162, 0.25);
+  border-radius: 10px;
+  margin-right: 20px;/*изменил 25->20, откуда-то взялись непонятные 10(а если точнее 8) пикселей*/
+  display: inline-block;
+}
+
+.list__item:last-of-type {
+  margin-right: 0;
+}
+
+.list__title-em {
+  font-weight: 500;
+  font-size: 26em;
+  line-height: 100%;/*при увеличении размера шрифта, текст из-за этого будет накладываться друг на друга если не указать в процентах*/
+  text-align: center;
+}
+
+.list__text-em {
+  font-weight: 500;
+  font-size: 20em;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.list__title-rem {
+  font-weight: 500;
+  font-size: 26rem;
+  line-height: 100%;/*при увеличении размера шрифта, текст из-за этого будет накладываться друг на друга если не указать в процентах*/
+  text-align: center;
+}
+
+.list__text-rem {
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.list__title-px {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 100%;/*при увеличении размера шрифта, текст из-за этого будет накладываться друг на друга если не указать в процентах*/
+  text-align: center;
+}
+
+.list__text-px {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;/*в данном случае нет, так как указано в процентах*/
+  text-align: center;
+  margin-top: 10px;
+}
