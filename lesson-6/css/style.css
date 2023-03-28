@@ -1,0 +1,39 @@
+/*li {*/
+/*  list-style: none;*/
+/*}*/
+
+/*li::before {*/
+/*  content: url("/img/vector.svg");*/
+/*}*/
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,::before,::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px/1.4 "Arial","Roboto",sans-serif;
+}
+
+.posts {
+  font-family: "Roboto",sans-serif;
+}
