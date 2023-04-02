@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/gilroy/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/open-sans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font: 400 14px/1.4 "Arial", "Gilroy", "OpenSans", sans-serif;
+}
+
+h3 {
+  font: 600 22px/1.1 "Gilroy", sans-serif;
+}
+
+p {
+  font: 400 14px/1.2 "Gilroy", sans-serif;
+  text-align: center;
+  letter-spacing: 0.02em;
+  width: 100%;
+  max-width: 380px;
+  margin-top: 24px;
+}
+
+.wrap {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 920px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 920px;
+  min-height: 960px;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.card {
+  min-height: 460px;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px 40px;
+  margin-bottom: 40px;
+}
+
+.left {
+  box-shadow: 0 0 25px #C7C7C7;
+}
+
+.right {
+  box-shadow: 0 0 4px #C7C7C7;;
+}
+
+.up {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right .up {
+  padding-top: 19px;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.title {
+  margin-top: 25px;
+}
+
+.right .title {
+  margin-top: 43px;
+}
+
+.card__button {
+  width: 100%;
+  max-width: 200px;
+  height: 70px;
+  background-color: #E31E24;
+  font: 600 18px/1.1 "Gilroy", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 44px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 475px;
+  justify-content: space-between;
+  margin-top: 59px;
+}
+
+.page-button {
+  font: 600 18px/1 "OpenSans", sans-serif;
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #C7C7C7;
+}
+
+.active {
+  background-color: #E31E24;
+  color: #fff;
+}
+
+.page-button:hover {
+  background-color: #E31E24;
+  color: #fff;
+}
+
+.buttons__list {
+  display: flex;
+  width: 100%;
+  max-width: 245px;
+  justify-content: space-between;
+}
