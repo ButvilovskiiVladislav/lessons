@@ -16,9 +16,8 @@ li {
   margin: 210px auto 0;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
   justify-content: space-around;
-  animation: preloader-main 5s linear infinite;
+  animation: preloader-main 4s linear infinite;
 }
 
 .preloader__item {
@@ -58,6 +57,10 @@ li {
 }
 
 @keyframes preloader-main {
+  0% {
+    transform: rotate(0);
+  }
+
   100% {
     transform: rotate(360deg);
   }
