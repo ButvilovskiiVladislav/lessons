@@ -1,0 +1,33 @@
+@import "font.css";
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --candal: "Candal", sans-serif;
+  --grey: #cbcbcb;
+  --red: #ff4c24;
+  --white: #fff;
+  --green-gradient: linear-gradient(180deg, rgba(32, 255, 215, 0.4) 0%, rgba(237, 255, 32, 0.4) 100%);
+  --black-gradient: linear-gradient(180deg, rgba(16, 20, 19, 0) 87.59%, #101413 100%);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  font: 400 14px/1.4 "Arial", "Montserrat", "Candal", sans-serif;
+  /*background: var(--black-gradient);*/
+}
