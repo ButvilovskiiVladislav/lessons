@@ -27,7 +27,114 @@ a {
 }
 
 body {
-  background-color: #000;
+  background-color: #272525;
   font: 400 14px/1.4 "Arial", "Montserrat", "Candal", sans-serif;
   /*background: var(--black-gradient);*/
+}
+
+/*header style*/
+.header {
+  display: flex;
+  /*width: 100%;*/
+  /*max-width: 1300px;*/
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--white);
+}
+
+.header__logo svg {
+  width: 189px;
+}
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 220px); /* !!!!!! */
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 30px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  font: 300 20px/24px var(--montserrat);
+  color: var(--grey);
+}
+
+.links-block {
+  display: flex;
+  align-items: center;
+}
+
+.social-net {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-net__link {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.social-net__link:last-child {
+  margin-right: 0;
+}
+
+.telegram svg {
+  width: 15px;
+}
+
+.twitter svg {
+  width: 15px;
+}
+
+.opensea svg {
+  width: 18px;
+}
+
+.discord svg {
+  width: 15px;
+}
+
+.header__buttons {
+
+}
+
+.button-male {
+  border: 1px solid #06f;
+  background: none;
+  width: 50px;
+  height: 50px;
+}
+
+.button-male svg {
+  width: 20px;
+}
+
+.button-connect {
+  background: none;
+  font: 300 20px/24px var(--montserrat);
+  text-transform: uppercase;
+  color: var(--white);
+  border: 1px solid var(--white);
+  height: 50px;
+  width: 240px;
 }
