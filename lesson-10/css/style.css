@@ -31,6 +31,10 @@ body {
   font: 400 14px/1.4 "Arial", "Montserrat", "Candal", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*header style*/
 .header {
   z-index: 5;
@@ -55,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(100% - 220px); /* !!!!!! */
+  width: calc(100% - 220px);
 }
 
 .menu__list {
@@ -83,22 +87,10 @@ body {
 }
 
 .social-net {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
-  /*margin-left: 178px;*/
   display: grid;
   grid-template-columns: repeat(4, 30px);
   grid-column-gap: 15px;
 }
-
-/*.social-net__item {*/
-/*  !*margin-right: 15px;*!*/
-/*}*/
-
-/*.social-net__item:last-child {*/
-/*  margin-right: 0;*/
-/*}*/
 
 .social-net__link {
   display: flex;
@@ -156,10 +148,8 @@ body {
 
 /*main style*/
 .preview {
-  background: url("../img/bg.png") no-repeat 50% 50%;/*Как сделать так */
-  /*background-size: 100%;*/
+  background: url("../img/bg.png") no-repeat 50% 50%;
   background-size: cover;
-  /*background-position: 50% 50%;*/
   min-height: 894px;
   padding: 194px calc(50% - 340px);
   position: relative;
