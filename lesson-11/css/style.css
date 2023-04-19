@@ -18,17 +18,15 @@
 body {
   font: 400 14px/1.4 "Arial", var(--font);
   display: grid;
-  grid-template-columns: 330px auto auto;
-  grid-template-rows: 362px 60px auto 352px 439px;
-  grid-column-gap: 13px;
+  grid-template-columns: 330px auto;
+  grid-template-rows: 142px 220px auto 439px;
   width: 100%;
-  max-width: 1440px;
+  min-height: 2595px;
   grid-template-areas:
-          "header header header"
-          ". . ."
-          "aside main ."
-          ". . ."
-          "footer footer footer";
+          "header header"
+          "banner banner"
+          "aside main"
+          "footer footer";
 }
 
 li {
@@ -40,9 +38,17 @@ li {
   grid-area: header;
 }
 
+.banner {
+  background: #f0f;
+  width: 100%;
+  height: 220px;
+  grid-area: banner;
+}
+
 .content {
   background: #1B222E;
   grid-area: main;
+  padding: 60px calc(100% - 1028px) 420px 13px;
 }
 
 .aside {
@@ -53,9 +59,6 @@ li {
 .footer {
   background: rgba(39, 96, 196, 0.47);
   grid-area: footer;
-}
-
-.skin-shop {
 }
 
 .card-list {
