@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px/1.4 "Arial", "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.posts {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1280px;
+  padding-bottom: 57px;
+  background-color: #F2F8F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-inline: 160px 48px;
+}
+
+.white-block {
+  width: 447px;
+  height: 437px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.white-block::before {
+  content: "";
+  position: absolute;
+  width: 447px;
+  height: 437px;
+  border: 20px solid #3D8455;
+  border-radius: 2px;
+  z-index: 5;
+  top: 48px;
+  left: 33px;
+}
+
+.text-block {
+  width: 550px;
+  margin-top: 130px;
+}
+
+.tree {
+  position: absolute;
+  top: -37px;
+  left: calc(50% + 33px);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.text-block__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 59px;
+  color: #26292E;
+}
+
+.text-block__text {
+  margin-top: 19px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #26292E;
+}
+
+.list {
+  margin-top: 23px;
+}
+
+.list__item {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #26292E;
+  position: relative;
+  padding-left: 15px;
+  margin-top: 13px;
+}
+
+.list__item::before {
+  content: "";
+  background: url("/img/vector.svg") no-repeat center;
+  width: 12px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-size: cover;
+}
+
+.list__item:first-child {
+  margin-top: 0;
+}
+
+.button {
+  width: 211px;
+  padding: 17px 43px;
+  font: 500 20px "Roboto", sans-serif;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #408858;
+  margin-top: 42px;
+}
