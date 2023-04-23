@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<form class="wrap">
+  <div class="filling-block">
+    <h2 class="block-title">Оформить заказ</h2>
+    <label class="input-block">
+      <span class="input-block__text">ФИО*</span>
+      <input type="text" name="name" class="input-panel" placeholder="Введите ваше ФИО" required>
+    </label>
+    <label class="input-block">
+      <span class="input-block__text">Телефон*</span>
+      <input type="tel" name="phone" class="input-panel" placeholder="Введите ваш номер телефона" required>
+    </label>
+    <label class="input-block">
+      <span class="input-block__text">Email*</span>
+      <input type="email" name="mail" class="input-panel" placeholder="Введите ваш email" required>
+    </label>
+    <label class="input-block">
+      <span class="input-block__text">Адрес*</span>
+      <input type="text" name="address" class="input-panel" placeholder="Введите ваш адрес" required>
+    </label>
+    <label class="input-block">
+      <span class="input-block__text">Примечание к заказу</span>
+      <textarea class="input-panel area" name="note"></textarea>
+    </label>
+    <button type="submit" name="send" class="send">оформить заказ</button>
+  </div>
+  <div class="selection-block">
+    <h2 class="block-title">Способ доставки</h2>
+    <ul class="choose">
+      <li class="choose__option">
+        <label class="radio-block">
+          <input type="radio" name="check" class="check" required>
+          <span class="check-text">Склад РБ</span>
+        </label>
+        <p class="choose__text">Это самый удобный, бесплатный и быстрый способ получения заказа!</p>
+        <p class="choose__text address">Адрес склада: г.Гродно, ул. Горького, 91</p>
+        <p class="choose__text">Отгрузка осуществляется по предварительной договоренности, телефон для связи +375 (15) 261 08 81</p>
+      </li>
+      <li class="choose__option">
+        <label class="radio-block">
+          <input type="radio" name="check" class="check" required>
+          <span class="check-text">Склад РФ</span>
+        </label>
+        <p class="choose__text">Это самый удобный, бесплатный и быстрый способ получения заказа!</p>
+        <p class="choose__text address">Адрес склада: г. Подольск, ул. Вишневая, д.7, склад 11</p>
+        <p class="choose__text">Отгрузка осуществляется по предварительной договоренности, телефон для связи +7 919 045 55 88</p>
+      </li>
+      <li class="choose__option">
+        <label class="radio-block">
+          <input type="radio" name="check" class="check" required>
+          <span class="check-text">Доставка</span>
+        </label>
+        <p class="choose__text">Сроки доставки товара покупателю устанавливаются договором. Если доставка товара произведена в установленные договором сроки, но товар не был передан покупателю по его вине, повторная доставка производится после повторной оплаты покупателем стоимости услуг по доставке товара.</p>
+      </li>
+    </ul>
+  </div>
+</form>
+
+</body>
+</html>
