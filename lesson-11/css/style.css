@@ -19,12 +19,11 @@ body {
   font: 400 14px/1.4 "Arial", var(--font);
   display: grid;
   grid-template-columns: 330px auto;
-  grid-template-rows: 142px 220px auto 439px;
+  grid-template-rows: max-content auto 439px;
   width: 100%;
   min-height: 2595px;
   grid-template-areas:
           "header header"
-          "banner banner"
           "aside main"
           "footer footer";
 }
@@ -34,15 +33,18 @@ li {
 }
 
 .header {
-  background: #008000;
   grid-area: header;
+}
+
+.header__wrap {
+  background: #008000;
+  min-height: 142px;
 }
 
 .banner {
   background: #f0f;
   width: 100%;
   height: 220px;
-  grid-area: banner;
 }
 
 .content {
