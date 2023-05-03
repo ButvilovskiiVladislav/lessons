@@ -8,7 +8,8 @@
 <script>
   'use strict'
 
-  function Season(x) {
+  function Season() {
+    let x = +prompt('Введите цифру от 1 до 12.');
     (!(x >= 1 && x <= 12)) ? alert('Не то ввели.') : (
             (x >= 3 && x <= 5) ? alert('Весна.') : (
                     (x >= 6 && x <= 8) ? alert('Лето.') : (
@@ -18,8 +19,7 @@
     );
   }
 
-  let month = +prompt('Введите цифру от 1 до 12.');
-  Season(month);
+  Season();
 </script>
 </body>
 </html>
