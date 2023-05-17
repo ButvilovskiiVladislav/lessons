@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function sumInput() {
+    let arr = [];
+    let sum = 0;
+    while (true) {
+      let n = prompt('Введите значение:');
+      if (Boolean(n) && !isNaN(+n)) {
+        arr.push(+n);
+      } else {
+        break;
+      }
+    }
+    for (let i of arr) {
+      sum += i;
+    }
+    return sum;
+  }
+
+  alert(sumInput());
+</script>
+</body>
+</html>
